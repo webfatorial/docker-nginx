@@ -12,7 +12,7 @@ www:
         - "80:80"
         - "443:443"
     volumes:
-        - ./www:/var/www
+        - ./www:/var/www/html
         - ./nginx-config:/etc/nginx
     links:
         - fpm
