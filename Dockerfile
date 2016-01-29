@@ -2,6 +2,9 @@ FROM nginx
 
 MAINTAINER webfatorial <webfatorial@webfatorial.com>
 
+VOLUME /var/www/html
+WORKDIR /var/www/html
+
 RUN sed -i -e 's/^UMASK *[0-9]*.*/UMASK    002/' /etc/login.defs
 RUN umask 0002
 
