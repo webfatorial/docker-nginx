@@ -2,7 +2,7 @@ FROM nginx
 
 MAINTAINER webfatorial <webfatorial@webfatorial.com>
 
-VOLUME /var/www
-WORKDIR /var/www
+VOLUME /var/www/html
+WORKDIR /var/www/html
 
 ADD etc /etc
